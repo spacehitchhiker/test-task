@@ -240,23 +240,31 @@ body {
       position: relative;
       overflow: hidden;
       z-index: 50;
-      padding: 0 40px 0 50px; }
-      .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider .slick-prev {
+      padding: 0 40px 0 40px; }
+      .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider .slick-custom-prev {
         position: absolute;
         z-index: 1000;
         top: 50%;
         cursor: pointer;
-        left: 1px; }
-      .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider .slick-prev:before {
+        left: 1px;
+        background: rgba(255, 255, 255, 0);
+        border: none; }
+      .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider .slick-custom-prev:before {
         content: url(../img/arrow-left.svg); }
-      .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider .slick-next {
+      .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider .slick-custom-prev:focus {
+        outline: none; }
+      .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider .slick-custom-next {
         position: absolute;
         z-index: 1000;
         top: 50%;
         cursor: pointer;
-        right: 19px; }
-      .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider .slick-next:before {
+        right: 1px;
+        background: rgba(255, 255, 255, 0);
+        border: none; }
+      .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider .slick-custom-next:before {
         content: url(../img/arrow-right.svg); }
+      .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider .slick-custom-next:focus {
+        outline: none; }
       .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider .sliderConstructionProgress__sliderBox_slider_item {
         margin: 15px; }
 
