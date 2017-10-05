@@ -312,12 +312,28 @@ body {
 			position: relative;
 			overflow: hidden;
 			z-index: 50;
-			/*.slick-prev{
-				background-image: url(../img/arrow-left.svg);
+			.slick-prev{
+				position: absolute;
+				z-index: 1000;
+				top: 50%;
+				cursor: pointer;
+				left: -5px;
 			}
-			.slick-next{
-				background-image: url(../img/arrow-right.svg);
-			}*/
+			.slick-prev:before{
+			 	content: url(../img/arrow-left.svg);
+		    }
+		    .slick-next{
+				position: absolute;
+				z-index: 1000;
+				top: 50%;
+				cursor: pointer;
+				right: -5px;
+			}
+			.slick-next:before{
+				content: url(../img/arrow-right.svg);
+			} 
+
+
 			.sliderConstructionProgress__sliderBox_slider_item{
 				// width: 235px  !important;
     			margin: 15px;
