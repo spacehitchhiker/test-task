@@ -110,14 +110,14 @@
 			<div class="sliderConstructionProgress sliderConstructionProgress__sliderBox">
 				<div class="sliderConstructionProgress__sliderBox_backLayer"></div>
 				<div class="sliderConstructionProgress__sliderBox_slider">
-					<button type="button" class="slick-prev"></button>
+					<!-- <button type="button" class="slick-prev"></button> -->
 					<div class="sliderConstructionProgress__sliderBox_slider_item"><img src="img/Image-slider1.png"></div>
 					<div class="sliderConstructionProgress__sliderBox_slider_item"><img src="img/Image-slider2.png"></div>
 					<div class="sliderConstructionProgress__sliderBox_slider_item"><img src="img/Image-slider3.png"></div>
 					<div class="sliderConstructionProgress__sliderBox_slider_item"><img src="img/Image-slider1.png"></div>
 					<div class="sliderConstructionProgress__sliderBox_slider_item"><img src="img/Image-slider2.png"></div>
 					<div class="sliderConstructionProgress__sliderBox_slider_item"><img src="img/Image-slider3.png"></div>
-					<button type="button" class="slick-next"></button>
+					<!-- <button type="button" class="slick-next"></button> -->
 				</div>
 			</div>
 		</div>
@@ -134,8 +134,9 @@
 					<div class="header__title__decor_line"></div>
 				</div>
 			</div>
-			<div class="sliderFloorPlan ">
-				
+			<div class="sliderFloorPlan__sliderBox">
+				<div style="display: flex; justify-content: center;"><img src="img/plan.jpg"></div>
+				<div style="display: flex; justify-content: center;"><img src="img/komsomolskii44.png"></div>
 			</div>
 		</div>
 		<footer class="footer">
@@ -158,25 +159,28 @@
 				  slidesToShow: 3,
 				  slidesToScroll: 3,
 				  arrows: true,
-				  prevArrow: '<button type="button" class="slick-prev"></button>',
-				  nextArrow: '<button type="button" class="slick-next"></button>'
+				  variableWidth: true,
+			
+				  /*prevArrow: '<button type="button" class="slick-prev"></button>',
+				  nextArrow: '<button type="button" class="slick-next"></button>'*/
 				});
 				/*$('.sliderConstructionProgress__sliderBox_slider').slick('slick-prev');
 				$('.sliderConstructionProgress__sliderBox_slider').slick('slick-next');*/
 			});
 		</script>
-		<!-- <script type="text/javascript">
+		<script type="text/javascript">
 			$(document).ready(function(){
-				$('.box-for-slider__slider').slick({
+				$('.sliderFloorPlan__sliderBox').slick({
 				  dots: false,
 				  infinite: true,
 				  speed: 500,
 				  fade: true,
 				  cssEase: 'linear',
 				  centerMode: true,
+				  arrows: true,
 				});
 			});
-		</script> -->
+		</script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDD6lssvaUVz6XemkhL5Ftq5B2V4wOns&callback=initMap" async defer></script>
 		<script>
 	      var map;
