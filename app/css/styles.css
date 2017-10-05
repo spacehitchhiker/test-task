@@ -236,7 +236,7 @@ body {
 		    right: 0; */
       margin: auto; }
     .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider {
-      width: 825px;
+      width: 870px;
       position: relative;
       overflow: hidden;
       z-index: 50; }
@@ -245,7 +245,7 @@ body {
         z-index: 1000;
         top: 50%;
         cursor: pointer;
-        left: -5px; }
+        left: 1px; }
       .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider .slick-prev:before {
         content: url(../img/arrow-left.svg); }
       .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider .slick-next {
@@ -253,7 +253,7 @@ body {
         z-index: 1000;
         top: 50%;
         cursor: pointer;
-        right: -5px; }
+        right: 19px; }
       .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider .slick-next:before {
         content: url(../img/arrow-right.svg); }
       .sliderConstructionProgress .sliderConstructionProgress__sliderBox .sliderConstructionProgress__sliderBox_slider .sliderConstructionProgress__sliderBox_slider_item {
