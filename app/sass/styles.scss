@@ -366,9 +366,7 @@ body {
 	display: flex;
 	flex-direction: column;
     align-items: center;
-    // width: 1476px;
-    // height: 901px;
-    border: solid 1px #cbcbcb;
+    // border: solid 1px #cbcbcb;
     margin: 0 40px 0 40px;
 	.header__title{
 		flex-direction: row;
@@ -404,7 +402,14 @@ body {
 				width: 1400px;
 				.sliderFloorPlan__sliderBox_slider_item{
 					display: flex;
-					justify-content: center;
+				    flex-direction: column;
+				    align-items: center;
+					.sliderFloorPlan__sliderBox_slider_item_p{
+						font-family: PTSerif;
+						font-size: 14px;
+						line-height: 1;
+						text-align: center;
+					}
 				}
 		}
 	}

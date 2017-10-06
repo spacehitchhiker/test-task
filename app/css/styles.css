@@ -278,7 +278,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 1px #cbcbcb;
   margin: 0 40px 0 40px; }
   .sliderFloorPlan .header__title {
     flex-direction: row;
@@ -309,7 +308,13 @@ body {
       width: 1400px; }
       .sliderFloorPlan .sliderFloorPlan__sliderBox .sliderFloorPlan__sliderBox_slider .sliderFloorPlan__sliderBox_slider_item {
         display: flex;
-        justify-content: center; }
+        flex-direction: column;
+        align-items: center; }
+        .sliderFloorPlan .sliderFloorPlan__sliderBox .sliderFloorPlan__sliderBox_slider .sliderFloorPlan__sliderBox_slider_item .sliderFloorPlan__sliderBox_slider_item_p {
+          font-family: PTSerif;
+          font-size: 14px;
+          line-height: 1;
+          text-align: center; }
 
 .footer {
   display: flex;
