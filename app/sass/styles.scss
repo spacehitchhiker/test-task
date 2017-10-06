@@ -343,7 +343,6 @@ body {
 			 .slick-custom-next:focus{
 				outline: none;
 		    }
-
 			.sliderConstructionProgress__sliderBox_slider_item{
     			margin: 15px;
     			.sliderConstructionProgress__sliderBox_slider_item_p{
@@ -357,7 +356,6 @@ body {
 		}
 	}
 }
-
 
 //SLIDER Construction Progress-END
 
@@ -400,6 +398,36 @@ body {
 				position: relative;
 				overflow: hidden;
 				width: 1400px;
+				.slick-custom-prev2 {
+					position: absolute;
+					z-index: 1000;
+					top: 40%;
+					cursor: pointer;
+					left: 1px;
+					background: rgba(255, 255, 255, 0);
+	    			border: none;
+				}
+				.slick-custom-prev2:before{
+				 	content: url(../img/arrow-left.svg);
+			    }
+			    .slick-custom-prev2:focus{
+					outline: none;
+			    }
+			    .slick-custom-next2{
+					position: absolute;
+					z-index: 1000;
+					top: 40%;
+					cursor: pointer;
+					right: 1px;
+					background: rgba(255, 255, 255, 0);
+	    			border: none;
+				}
+				.slick-custom-next2:before{
+					content: url(../img/arrow-right.svg);
+				} 
+				 .slick-custom-next2:focus{
+					outline: none;
+			    }
 				.sliderFloorPlan__sliderBox_slider_item{
 					display: flex;
 				    flex-direction: column;
@@ -409,14 +437,12 @@ body {
 						font-size: 14px;
 						line-height: 1;
 						text-align: center;
+						margin-bottom: 30px;
 					}
 				}
 		}
 	}
 }
-
-
-
 
 //  SLIDER Floor Plan - END
 
@@ -425,7 +451,6 @@ body {
 .footer{
 	display: flex;
     flex-direction: column;
-    // align-items: center;
     .footer__box1{
     	flex-direction: row;
 	    justify-content: space-between;
