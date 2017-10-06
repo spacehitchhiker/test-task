@@ -302,8 +302,14 @@ body {
       color: #3c3c3c; }
   .sliderFloorPlan .sliderFloorPlan__sliderBox {
     position: relative;
-    overflow: hidden;
-    width: 1400px; }
+    overflow: hidden; }
+    .sliderFloorPlan .sliderFloorPlan__sliderBox .sliderFloorPlan__sliderBox_slider {
+      position: relative;
+      overflow: hidden;
+      width: 1400px; }
+      .sliderFloorPlan .sliderFloorPlan__sliderBox .sliderFloorPlan__sliderBox_slider .sliderFloorPlan__sliderBox_slider_item {
+        display: flex;
+        justify-content: center; }
 
 .footer {
   display: flex;

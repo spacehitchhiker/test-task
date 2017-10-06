@@ -398,7 +398,15 @@ body {
 	.sliderFloorPlan__sliderBox{
 		position: relative;
 		overflow: hidden;
-		width: 1400px;
+			.sliderFloorPlan__sliderBox_slider{
+				position: relative;
+				overflow: hidden;
+				width: 1400px;
+				.sliderFloorPlan__sliderBox_slider_item{
+					display: flex;
+					justify-content: center;
+				}
+		}
 	}
 }
 

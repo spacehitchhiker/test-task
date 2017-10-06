@@ -133,8 +133,11 @@
 				</div>
 			</div>
 			<div class="sliderFloorPlan__sliderBox">
-				<div style="display: flex; justify-content: center;"><img src="img/plan.jpg"></div>
-				<div style="display: flex; justify-content: center;"><img src="img/komsomolskii44.png"></div>
+				<!-- <div class="sliderFloorPlan__sliderBox_backLayer"></div> -->
+				<div class="sliderFloorPlan__sliderBox_slider">
+					<div class="sliderFloorPlan__sliderBox_slider_item"><img src="img/plan.jpg"></div>
+					<div class="sliderFloorPlan__sliderBox_slider_item"><img src="img/plan.jpg"></div>
+				</div>
 			</div>
 		</div>
 		<footer class="footer">
@@ -164,13 +167,13 @@
 		</script>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$('.sliderFloorPlan__sliderBox').slick({
+				$('.sliderFloorPlan__sliderBox_slider').slick({
 				  dots: false,
 				  infinite: true,
-				  speed: 500,
-				  fade: true,
-				  cssEase: 'linear',
-				  centerMode: true,
+				  // speed: 500,
+				  // fade: true,
+				  // cssEase: 'linear',
+				  // centerMode: true,
 				  arrows: true,
 				});
 			});
