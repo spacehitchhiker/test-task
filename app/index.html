@@ -11,6 +11,7 @@
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
+		<div class="container">
 		<header class="header">
 			<a class="header_a" href="#"><div class="header header__addressLeft"><img class="header__addressLeft_imgLeft" src="img/arrow-left.svg"> <span>пр. Комсомольский, 44</span></div></a>
 			<div class="header header__title">
@@ -143,15 +144,54 @@
 		<footer class="footer">
 			<div class="footer footer__box1">
 				<p class="footer__box1_p">Любая информация, представленная на данном сайте, носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437 ГК РФ.</p>
-				<button class="footer__box1_button">Вход для риэлторов</button>
+				<a class="footer__box1_a" href="javascript:PopUpShow()">ВХОД ДЛЯ РИЭЛТОРОВ</a>
 			</div>
 			<div class="footer footer__box2">
 				<span class="footer__box2_spanLeft">2016 © Строительная перспектива</span>
 				<span class="footer__box2_spanRight">Разработка сайта - ADN Digital Studio</span>
 			</div>
 		</footer>
+		</div>
+		<div class="popup"  id="popup1">
+			<div class="popup__clouse"><a class="popup__clouse_a" href="javascript:PopUpHide()"><img class="popup__clouse_a_img" src="img/Clouse.svg"></a></div>
+		    <div class="popup_content">
+		    	<h4>Вход для риэлторов</h4>
+		    	<hr>
+		    	<form id="entrance" class="form">
+		    		<div>
+		    			<p>Логин</p>
+		    			<input type="text" name="login" placeholder="Укажите ваш логин">
+		    		</div>
+		    		<div>
+		    			<p>Пароль</p>
+		    			<input type="password" name="password" placeholder="Укажите ваш пароль">
+		    		</div>
+		    	</form>
+		    	<button form="entrance">ВОЙТИ</button>
+		    </div>
+		</div>
 		<!-- Scripts -->
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+<!-- Pop-up  in footer-->
+
+		<script>
+		    $(document).ready(function(){
+		        //Скрыть PopUp при загрузке страницы    
+		        PopUpHide();
+		    });
+		    //Функция отображения PopUp
+		    function PopUpShow(){
+		        $("#popup1").show();
+		    }
+		    //Функция скрытия PopUp
+		    function PopUpHide(){
+		        $("#popup1").hide();
+		    }
+		</script>
+
+<!-- Sliders -->
+
 		<script type="text/javascript" src="js/slick-1.8.0/slick/slick.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
@@ -180,6 +220,9 @@
 				});
 			});
 		</script>
+
+						<!--  MAP  -->
+
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDD6lssvaUVz6XemkhL5Ftq5B2V4wOns&callback=initMap" async defer></script>
 		<script>
 	      var map;

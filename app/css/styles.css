@@ -358,8 +358,18 @@ body {
       font-size: 12px;
       line-height: 1.33;
       margin-left: 24px; }
-    .footer .footer__box1 .footer__box1_button {
-      margin-right: 24px; }
+    .footer .footer__box1 .footer__box1_a {
+      margin-right: 24px;
+      font-family: PTSans-Narrow;
+      font-size: 15px;
+      line-height: 1.5;
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0);
+      border: none;
+      text-decoration: none;
+      color: #3c3c3c; }
+    .footer .footer__box1 .footer__box1_button:focus {
+      outline: none; }
   .footer .footer__box2 {
     flex-direction: row;
     justify-content: space-between; }
@@ -373,3 +383,34 @@ body {
       font-size: 12px;
       line-height: 2;
       margin: 24px 24px 0 0; }
+
+.popup {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .popup .popup__clouse {
+    width: 320px;
+    display: flex;
+    justify-content: flex-end; }
+  .popup .popup_content {
+    margin: 12px auto 0px auto;
+    width: 320px;
+    height: 403px;
+    background-color: #ffffff;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: relative;
+    z-index: 1000; }
